@@ -1,0 +1,14 @@
+{
+    "cloudtrail": {
+        "name": "YOUR_TRAIL_NAME",
+        "account_id": "000000000000",
+        "region": "us-east-1"
+    },
+    "s3": {
+        "bucket": "YOUR_AUDIT_LOG_BUCKET"
+    },
+    "kms": {
+        "description": "YOUR_KEY_DESCRIPTION",
+        "alias": "alias/YOUR_KEY_ALIAS"
+    }
+}
