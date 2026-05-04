@@ -9,6 +9,19 @@
 * **🔍 Forensic Filtering:** Automatically ignores "ReadOnly" events to focus exclusively on mutations (Create, Delete, Update).
 * **📅 Automated Pathing:** Dynamically calculates the S3 log path based on the current UTC date.
 
+Example:
+    
+ ```code
+(venv) user@localhost:~/cloudtrailinguist
+$ python3 main.py
+--- STREAMING LOGS FOR: AWSLogs/821555666777/CloudTrail/us-east-1/2026/05/03/ ---
+[*] MUTATION: [2026-05-03T07:05:04Z] | pi.amazonaws.com | system-service | RetireGrant
+[*] MUTATION: [2026-05-03T07:05:04Z] | pi.amazonaws.com | system-service | RetireGrant
+[*] MUTATION: [2026-05-03T18:25:23Z] | 181.22.120.156 | system-service | ConsoleLogin
+[*] MUTATION: [2026-05-03T18:59:08Z] | pi.amazonaws.com | system-service | RetireGrant
+[*] MUTATION: [2026-05-03T18:59:08Z] | pi.amazonaws.com | system-service | RetireGrant
+```
+
 ## 🛠️ Quick Start
 
 ### 1. Prerequisites
