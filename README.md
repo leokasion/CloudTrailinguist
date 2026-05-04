@@ -2,6 +2,8 @@
 
 **CloudTrailinguist** is a lightweight forensic Python tool designed to stream and filter AWS CloudTrail logs directly from S3. 🕵️‍♂️ Instead of downloading gigabytes of logs to your local machine, this script decompresses and analyzes the stream in memory to identify infrastructure **mutations** (non-read-only events) in real-time. ⚡
 
+![CloudTrailinguist Flow](/Code_Generated_Image.png)
+
 ## 🚀 Key Features
 * **☁️ Zero Footprint:** Streams `json.gz` archives directly from S3 using `boto3`. No local storage is required.
 * **🔍 Forensic Filtering:** Automatically ignores "ReadOnly" events to focus exclusively on mutations (Create, Delete, Update).
