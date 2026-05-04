@@ -15,17 +15,21 @@
 * 📑 An active AWS CloudTrail delivering logs to an S3 bucket.
 
 ### 2. Configuration
-Create a `configtrail.json` file in the root directory (use your placeholder file as a template):
+Create a `configtrail.json` file in the root directory (you can use the placeholder file as a template):
 
 ```json
 {
     "cloudtrail": {
-        "name": "your-trail-name",
-        "account_id": "123456789012",
+        "name": "YOUR_TRAIL_NAME",
+        "account_id": "000000000000",
         "region": "us-east-1"
     },
     "s3": {
-        "bucket": "your-audit-log-bucket"
+        "bucket": "YOUR_AUDIT_LOG_BUCKET"
+    },
+    "kms": {
+        "description": "YOUR_KEY_DESCRIPTION",
+        "alias": "alias/YOUR_KEY_ALIAS"
     }
 }
 ```
